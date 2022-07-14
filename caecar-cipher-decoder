@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+# get user input
+user_input = input('Enter a message to decode: ')
+encoded = ''
+# loop through each character in the user input
+for char in user_input:
+    # change the character to one letter ahead in the alphabet
+    char = chr(ord(char) + -1)
+    # add the character to the encoded string
+    encoded += char
+    
+#print the encoded message
+print('Decoded message: ' + encoded)
